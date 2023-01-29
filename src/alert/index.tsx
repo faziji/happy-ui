@@ -1,9 +1,13 @@
 import React from 'react';
-import t from 'prop-types';
-
 export interface AlertProps {
+  /**
+   * @description       Alert 的类型
+   * @default           'info'
+   */
   kind?: 'info' | 'positive' | 'negative' | 'warning';
+  children: any // fafa
 }
+
 
 export type KindMap = Record<Required<AlertProps>['kind'], string>;
 
@@ -27,9 +31,5 @@ const Alert: React.FC<AlertProps> = ({ children, kind = 'info', ...rest }) => (
     {children}
   </div>
 );
-
-Alert.propTypes = {
-  kind: t.oneOf(['info', 'positive', 'negative', 'warning']),
-};
 
 export default Alert;

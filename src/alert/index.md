@@ -17,3 +17,13 @@ group:
 ### 基本用法
 
 <code src="./demo/basic.tsx" iframe></code>
+
+## API
+
+<API src="./index.tsx"></API>
+
+
+<!-- | 属性 | 说明     | 类型                                         | 默认值 |
+| ---- | -------- | -------------------------------------------- | ------ |
+| kind | 警告类型 | 'info'/'positive'/'negative'/'warning'非必填 | 'info' | -->
+
